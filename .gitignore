@@ -1,0 +1,27 @@
+# dependencies
+node_modules
+
+# local env files
+.env.local
+.env.*.local
+
+# coverage
+coverage
+
+# production
+public
+dist
+
+# cypress
+cypress
+
+# stackhawk
+.hawk
+
+# misc
+.stylelintrc.json
+.eslintcache
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
