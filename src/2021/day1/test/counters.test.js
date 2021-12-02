@@ -1,26 +1,29 @@
-import { expect } from '@open-wc/testing';
+import { expect } from 'chai';
+import { txtToArrayOfNumbers } from '../../../utils/inputConverter.js';
 import { countWhenNumberIncreases, countWhenNumberIncreasesByWindow } from '../counters.js';
-import { input } from '../input.js';
 
-const example = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
-
+// https://adventofcode.com/2021/day/1
 describe('Day 1: Sonar Sweep', () => {
   describe('Part 1', () => {
     it('should count the number of times a depth measurement increases', () => {
-      expect(countWhenNumberIncreases(example)).to.equal(7);
+      const input = txtToArrayOfNumbers('./src/2021/day1/test/example.txt');
+      expect(countWhenNumberIncreases(input)).to.equal(7);
     });
 
     it('should provide the answer', () => {
+      const input = txtToArrayOfNumbers('./src/2021/day1/input.txt');
       expect(countWhenNumberIncreases(input)).to.equal(1475);
     });
   });
 
   describe('Part 2', () => {
     it('should count the number of times the sum of measurements in 3 elements sliding window increases', () => {
-      expect(countWhenNumberIncreasesByWindow(example)).to.equal(5);
+      const input = txtToArrayOfNumbers('./src/2021/day1/test/example.txt');
+      expect(countWhenNumberIncreasesByWindow(input)).to.equal(5);
     });
 
     it('should provide the answer', () => {
+      const input = txtToArrayOfNumbers('./src/2021/day1/input.txt');
       expect(countWhenNumberIncreasesByWindow(input)).to.equal(1516);
     });
   });
