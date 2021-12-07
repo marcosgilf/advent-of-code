@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/marcosgilf/advent-of-code/compare/0.1.3...0.1.4) (2021-12-07)
+
+
+### Features
+
+* day 5 ([026616a](https://github.com/marcosgilf/advent-of-code/commit/026616a97f96f692df220aa5ac00a92adf84a664))
+
 ### [0.1.3](https://github.com/marcosgilf/advent-of-code/compare/0.1.2...0.1.3) (2021-12-05)
 
 
